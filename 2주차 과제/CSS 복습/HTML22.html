@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            *{ padding: 0; margin: 0;}
+            a {text-decoration: none}
+
+            #top_bar{position: fixed; top:0; left: 0; right:0; background-color: black; height: 100px;}
+            #top_bar ul {overflow: hidden;}
+            #top_bar ul li {float: left; line-height:100px}
+            #top_bar ul li a{display: block;padding: 0 30px;font-size:2em; color: white; border-right: 1px dashed white}
+            #top_bar ul li:last-child a{border-right: 0;}
+
+            #bottom_bar{position: fixed; bottom:0; left: 0; right:0; background-color: black; height: 100px;}
+            #left_bar{position: fixed; top:100px; bottom: 100px; left: 0; width: 300px; background-color: salmon;}
+            #right_bar{position: fixed; top:100px; bottom: 100px; right:0; background-color: salmon; width: 400px;}
+            #wrap{margin: 100px 400px 100px 300px; background-color: #cccccc; padding: 20px;}
+            #wrap div{overflow : hidden;}
+            #wrap div img{max-width: 300px; float: left; padding-right: 15px;}
+            #wrap div p::first-line{color: salmon}
+            #wrap div p::first-letter{font-size: 1.5em}
+
+            #left_bar ul {overflow: hidden}
+            #left_bar ul li{border-top:1px solid #fdd800; border-bottom:1px solid #fdd800;}
+            #left_bar ul li a{color:white; display:block; padding: 10px 30px;}
+            #left_bar ul li :hover{background-color: #fdd800}
+        </style>
+    </head>
+    <body>
+        <div id="top_bar">
+            <ul>
+                <li><a href="#none">gnb1</a></li>
+                <li><a href="#none">gnb2</a></li>
+                <li><a href="#none">gnb3</a></li>
+                <li><a href="#none">gnb4</a></li>                <li><a href="#none">gnb1</a></li>
+                <li><a href="#none">gnb5</a></li>
+
+            </ul>
+        </div>
+        <div id="bottom_bar">sad</div>
+        <div id="left_bar">
+            <ul>
+                <li><a href="#none">lnb1</a></li>
+                <li><a href="#none">lnb2</a></li>
+                <li><a href="#none">lnb3</a></li>
+                <li><a href="#none">lnb4</a></li>
+                <li><a href="#none">lnb5</a></li>
+                <li><a href="#none">lnb6</a></li>
+                <li><a href="#none">lnb7</a></li>
+                <li><a href="#none">lnb8</a></li>
+            </ul>
+        </div>
+        <div id="right_bar"></div>
+        <div id=wrap>
+            <div>
+                <img src="./img/2.jpg">
+                <p>올해 초부터 캘리포니아 농부성 협력기관 한 곳으로부터 의뢰를 받아서 캘리포니아 한인 농부들에게 제공할 여러 가지 문서를 번역해 왔습니다. 작년에 우연한 계기로 서류를 번역해 드렸던 한인분이 적극 추천해 주셔서 본의 아니게 농업 분야 서류를 번역하게 되었네요. 덕분에 우수농산물관리제도(Good Agricultural Practices)라든가 식품안전계획(Food Safety Plan)과 같은 용어에 친숙해졌습니다. 우물 안 개구리처럼 사는 저에게는 새로운 세상이 신기하고 재밌습니다. :-)
+                    (나중에 타지역 한인 농부들도 참고하도록 웹에다 올릴 계획이고 정부 공개 자료를 이해하기 쉽도록 정리한 내용이니) 기밀을 유지하지 않아도 되는 문서라 한 문장 골라서 분석합니다. 신문 기사나 책처럼 정제되지 않은, 실생활에서 사용하는 문장이라 보시면 되겠습니다. 농장에서 사용하는 물은 1년에 한 번 수질 검사를 해야 하는데, 샘플 채취 방법을 설명하는 문장입니다</p>
+            </div>
+        </div>
+    </body>
+</html>

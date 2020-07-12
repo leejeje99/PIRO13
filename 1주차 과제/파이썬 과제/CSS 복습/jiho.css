@@ -1,0 +1,61 @@
+
+        *{margin:0 auto; padding:0;}
+
+        /* 1-1: 첫번째 */
+        #CTRsection{background: #253653; margin: 0 auto; text-align:left; height: 300px; padding-top:120px; bottom:0;}
+        #CTRsection>#container{color: #ffffff;width:80%}
+        #CTRsection>#container>#CTRcontent{}
+        #CTRsection>#container>#CTRcontent>h3{margin-bottom: 8px; font-size: 1.9em}
+        #CTRsection>#container>#CTRBTN{disply:inline; float: right; padding:13px 40px;
+        border:1px solid #ffffff; border-radius:20px}
+        #CTRBTN:hover{background: #7b98fc; border: #7b98fc; transition: 0.8s}
+        /* 2-1: */
+        #portfolio{margin: 0 auto;}
+        #portfolio>#container{width:80%; }
+        #portfolio>#container>#PTcontent{text-align: center; padding: 30px; }
+        #portfolio>#container>#PTcontent>h1{padding-bottom: 15px; border-bottom:1px solid black; margin-bottom: 15px}
+        #portfolio>#container>#PTcontent>p{padding-bottom: 25px;}
+        #portfolio>#container>#PTcontent>#PTwidgets{list-style: none; border""}
+        /* */
+        #portfolio>#container>#PTcontent>#PTwidgets>#filter{display: inline; margin-top:15px; padding: 10px 20px; font-weight: bold; border:none;
+                                                            margin-right:7px;border-radius: 30px}
+        #filter:hover{background: #47b1e3; color: white;border: white; transition: 0.4s}
+        #filter:first-child:active{background: #47b1e3; color: white;border: white; }
+        /*  */
+
+        #portfolio>#container>#PTrow{background: #fdfdfe; }
+        /*#PTrow{width: 90%}*/
+        #portfolio #PTrow{margin-bottom: 30px; }
+        #portfolio #PTrow_img{margin-bottom: 20px;margin-left: 20px; display: inline-block; width: 30%; overflow:hidden;}
+        #portfolio #grid{ width:100%; float:left; transition-duration: 1s}
+        #grid:hover{transform:scale(1.2) ;transition-duration: 1s; transition}
+
+        #PTrow_img #hidden_box{position: absolute; top:200px; padding-left: 17px; font-size: 0.75em; border-top: 1px solid black; }
+
+
+
+
+
+        /*    */
+        #Teamzone{width:100%; height: 1500px ;background: #f2f4f9}
+        #Teamzone>#container{padding-top:80px;margin: 0 auto; width:80%;}
+        #Teamzone>#container>#content{text-align: center; font-size: 1.5em}
+        #Teamzone>#container>#content>h2{font-size:2em; padding-bottom:20px; border-bottom: 1px solid black}
+        #Teamzone>#container>#content>p{padding-top: 20px; padding-bottom:40px}
+        /* */
+        #Teamzone>#container>#Teamrow{}
+        #Teamzone>#container>#Teamrow>#container2>#mates{float:left; height:40%; width:50%; margin-bottom:20px; }
+        #Teamzone #contents{box-shadow: 1px 5px 10px gray;border-radius: 7px;padding:30px; background: #ffffff; margin-right: 20px; transition-duration: 1s}
+        #Teamzone #contents>#member_info{ margin-bottom: 25px ;display: inline-block ; width:290px; padding-left:20px }
+
+        #Teamzone img{width:100%; object-fit: cover; height: 100%}
+        #Teamzone .box{display: block; float:left; width:130px; height: 130px; border-radius: 70%; overflow: hidden;}
+
+        #Teamzone #contents>#member_info h1{color: #3b5998; margin-bottom: 5px}
+        #Teamzone #contents>#member_info span{color: #51656c; padding-bottom:7px; border-bottom: 1px solid black}
+        #Teamzone #contents>#member_info p{margin-top: 15px}
+
+        #Teamzone #snslink{text-align: center}
+        #Teamzone #snslink a{display:inline-block ;width:40px; height: 40px; border: 1px solid black; border-radius:80px}
+        /*    */
+        #Teamzone #contents:hover{transform:translateY(-10px); transition-duration: 0.8s;}

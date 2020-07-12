@@ -1,0 +1,87 @@
+<!--
+1. CSS 파일 분리
+- <link rel="stylesheet" href="title.css"/>
+
+2. import 규칙
+- @import url('~~~.css') 요즘 추세임
+- style tag 안에 가장 상단에 써야 함 style tag와 다른 점
+
+3. media 규칙
+- 디바이스 상황에 따른 다양한 설정 가능
+- 미디어 종류 확인 scr 컴퓨터 스크린을 위한 용도
+- <link rel="stylesheet" href="title.css" media = '용도'
+------------------------------------------------------
+반응형 웹
+- 스마트폰 제조사에 따라 화면 사이즈가 달라 맞추기 불편, PC만 만들면 됐는데 어디서 보여질건지에 따라 달라짐
+- 한 번 코딩한걸로 노하우가 생기지 않음, 많이 해봐야 함, 여러가지 만들어보기
+-
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @media screen and (max-width:800px) {
+            #wrap{width: 100%}
+            #content p {font-size: 3em; font-weight: bold}
+        }
+        @media screen and (min-width:801px) and (max-width:1000px) {
+            #wrap{width: 100%}
+            #content p {font-size: 1.5em; font-weight: bold}
+        }
+        @media screen and (max-width:1001px) {
+            #wrap{width: 80%}
+            #content p {font-size: 1em; font-weight: bold}
+        }
+        * {margin: 0; padding: 0;}
+        li{list-style: none}
+        #wrap{margin: 0 auto;}
+        #header{border: 1px solid black; height: 100px}
+        #header h1{text-align: center}
+
+        #nav{border: 1px solid black;}
+        #nav ul{overflow: hidden;}
+        #nav ul li{float: left; width: 20%; height: 50px; line-height: 50px; text-align: center; box-sizing: border-box;}
+
+        #content_wrap{border: 1px solid black;}
+        #content_wrap #content{padding: 10px;}
+        #content_wrap #content h2{border-bottom: 1px solid black; margin-bottom: 10px }
+
+        #footer{height: 100px; line-height: 100px; text-align: center; border:1px solid black; font-size: 2em; font-weight: bold;  }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+    <div id="nav">
+        <ul>
+            <li>menu1</li>
+            <li>menu1</li>
+            <li>menu1</li>
+            <li>menu1</li>
+            <li>menu1</li>
+        </ul>
+    </div>
+    <div id="content_wrap">
+        <div id="content">
+            <h2>앙기모띠</h2>
+            <p>서울=연합뉴스) 김경희 기자 = 정부와 더불어민주당이 다주택자에 대한 종합부동산세 최고세율을 최대 6% 수준으로 인상하는 방안을 유력하게 추진중인 것으로 확인됐다.
+
+이는 기존 최고세율 3.2%와 비교하면 배 가까운 인상인데다 지난 12·16 대책에서 예고한 4%를 기준으로 봐도 파격적인 수준의 상승이어서 시장의 저항과 충격이 불가피할 전망이다.
+
+여권 핵심 관계자는 9일 연합뉴스와 통화에서 "기본적으로 가능한 모든 수단을 총동원해 부동산을 확실하게 잡겠다는 방침이 분명하다"며 "종부세 최고세율을 6%안팎으로 높이는 방안에 가장 높은 무게를 두고 검토하고 있다"고 말했다.
+
+또 다른 관계자도 "이해찬 대표의 의지가 무엇보다 강하다"면서 "몇 개의 방안을 놓고 검토했지만, 가장 강력한 방안에 가장 무게를 두고 대책을 사실상 마련해 놓았다"고 밝혔다.
+
+당정은 애초 최고세율을 4.5%, 5%, 6%로 높이는 세가지 방안을 놓고 복수의 검토를 병행했지만 최종적으로 시장에 강력한 메시지를 줄 수 있는 6%안을 택한 것으로 전해진다.</p>
+        </div>
+    </div>
+    <div id="footer">
+        FOOTER
+    </div>
+</div>
+</body>
+</html>

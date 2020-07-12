@@ -1,0 +1,48 @@
+<!--특별한 경우에 가끔 쓰임, 모든 브라우저 지원도 아님
+이를 위해 벤더 프리픽스를
+벤더 프리픽스 : 많은 부라우저의 기능이 없으면 구현이 안되는 문제 해결, 모든 부러우저에서 다 볼 ㅅ ㅜ있더더활용하기도 함
+내부가 absolute라 바깥은 relative
+--------------------------------------------------------------------
+원래 애니메이션은 자바 스크립트로만 가능했으나 CSS 방법이 개발됨
+변환 함수 : translate, scale, skew, skew, rotate
+벤더 프리픽스 사용하기
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="24%20preset.js"></script>
+    <style>
+        * {margin: o; padding: 0; list-style: none}
+        #menu{width: 1000px; margin: 0 auto; border: 1px solid black; height: 300px;}
+        ul{overflow: hidden; height:300px;}
+        li{float: left; padding: 20px 30px; border:1px solid black; background-color: pink; color: black}
+        li:nth-child(1):hover{background:salmon;transform:scale(2); transform-origin:50% 0; z-index: 999; color: black }
+        li:nth-child(2):hover{background:salmon;transform:skew(10deg); transform-origin:50% 0; z-index: 999; color: black }
+        li:nth-child(3):hover{background:salmon; color: black;
+                        animation-name: ani; animation-duration: 2s; animation-iteration-count:infinite; }
+        @keyframes ani{
+            from{
+
+            }
+            to{
+                transform:scale(2) rotate(15deg) skew(-20deg); transform-origin/*중심 이동*/: 50% 0; z-index: 999; animation-direction: alternate;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <ul>
+        <li>lnb1</li>
+        <li>lnb2</li>
+        <li>lnb3</li>
+        <li>lnb4</li>
+        <li>lnb5</li>
+    </ul>
+</div>
+</body>
+</html>
