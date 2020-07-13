@@ -1,0 +1,19 @@
+
+*{list-style: none;}
+.col-sm-4 h3{font-weight: bold; font-size: 2.2em}
+.row{display: flex; width:100%; }
+
+.nav li:nth-child(2) a{color: #897f7f}
+.nav li:nth-child(3) a{color: #897f7f}
+.nav li:nth-child(4) a{color: #897f7f}
+.navbar {color: black}
+.navbar-brand {color: #ffffff}
+.active a{color: #ffffff}
+.navbar{background-color: #393434; border-radius: 0px;}
+
+.jumbotron{margin-left: 15px}
+#sidebar a {top:-20px;margin-left: 3vw ;padding-right:15vw; border: 1px solid #bfb4b4; border-radius: 5px; border-bottom: none}
+#sidebar .active{background-color: blue; color: white; }
+#sidebar #last{border-bottom: 1px solid #bfb4b4}
+.col-8{}
+.footer{margin-top: 5%; margin-bottom: 5%; }
